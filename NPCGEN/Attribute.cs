@@ -9,23 +9,31 @@ namespace NPCGEN
     class Attribute
     {
         public enum PointScale { Two = 2, Three = 3, Five = 5, Ten = 10, Twenty = 20};
+        private int _points;
+        protected int _level;
+        private int _baseStat;
+
         public String Name { get; }
         public int Scale { get; }
-        public int Points { get; set; }
-        public int Level { get; private set; }
+        
+        public int Points { get { return _points; } set { _points = value; UpdateLevel(); } }
+        public virtual int Level { get { return _level; } set { _level = value; } }
+        public int BaseStat { get { return _baseStat; } set { _baseStat = value; UpdateLevel(); } }
         
         public Attribute(String n, PointScale pS, int p)
         {
+            
             Name = n;
             Scale = (int)pS;
             Points = p;
+            BaseStat = 10;
             UpdateLevel();
         }
 
-        private void UpdateLevel()
+        protected void UpdateLevel()
         {
             int levelScale = Points / Scale;
-            Level = levelScale + 10;
+            Level = levelScale + BaseStat;
         }
 
         public override string ToString()

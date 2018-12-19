@@ -15,8 +15,12 @@ namespace NPCGEN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Attribute ST = new Attribute("ST", Attribute.PointScale.Ten, 6);
-            Console.WriteLine(ST);
+            NPC npc = new NPC("Bob", 43, 100);
+            Console.WriteLine(npc);
+            npc.SetAttribute(NPC.AttributeNames.IQ, 20);
+            Console.WriteLine(npc);
+            npc.SetAttribute(NPC.AttributeNames.PER, 12);
+            Console.WriteLine(npc);
         }
     }
 }

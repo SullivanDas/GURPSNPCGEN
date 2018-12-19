@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Advantage.cs" />
     <Compile Include="Attribute.cs" />
+    <Compile Include="DependentAttribute.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
