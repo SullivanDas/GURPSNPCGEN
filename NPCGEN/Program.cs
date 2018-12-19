@@ -15,8 +15,6 @@ namespace NPCGEN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Attribute ST = new Attribute("ST", Attribute.PointScale.Ten, 6);
-            Console.WriteLine(ST);
         }
     }
 }
