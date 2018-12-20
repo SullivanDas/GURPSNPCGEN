@@ -28,14 +28,14 @@ namespace NPCGEN
         private void InitializeAttributes()
         {
             
-            attributes[(int)AttributeNames.DX] = new Attribute("DX", Attribute.PointScale.Twenty, 0);
-            attributes[(int)AttributeNames.HP] = new Attribute("HP", Attribute.PointScale.Two, 0);
-            attributes[(int)AttributeNames.WILL] = new Attribute("WILL", Attribute.PointScale.Five, 0);
-            attributes[(int)AttributeNames.PER] = new Attribute("PER", Attribute.PointScale.Five, 0);
-            attributes[(int)AttributeNames.FP] = new Attribute("FP", Attribute.PointScale.Three, 0);
-            attributes[(int)AttributeNames.ST] = new ParentAttribute("ST", Attribute.PointScale.Ten, 0, attributes[(int)AttributeNames.HP]);
-            attributes[(int)AttributeNames.HT] = new ParentAttribute("HT", Attribute.PointScale.Ten, 0, attributes[(int)AttributeNames.FP]);
-            attributes[(int)AttributeNames.IQ] = new ParentAttribute("IQ", Attribute.PointScale.Twenty, 0, attributes[(int)AttributeNames.PER], attributes[(int)AttributeNames.WILL]);
+            attributes[(int)AttributeNames.DX] = new Attribute("DX", PointScale.Twenty, 0);
+            attributes[(int)AttributeNames.HP] = new Attribute("HP", PointScale.Two, 0);
+            attributes[(int)AttributeNames.WILL] = new Attribute("WILL", PointScale.Five, 0);
+            attributes[(int)AttributeNames.PER] = new Attribute("PER", PointScale.Five, 0);
+            attributes[(int)AttributeNames.FP] = new Attribute("FP", PointScale.Three, 0);
+            attributes[(int)AttributeNames.ST] = new ParentAttribute("ST", PointScale.Ten, 0, attributes[(int)AttributeNames.HP]);
+            attributes[(int)AttributeNames.HT] = new ParentAttribute("HT", PointScale.Ten, 0, attributes[(int)AttributeNames.FP]);
+            attributes[(int)AttributeNames.IQ] = new ParentAttribute("IQ", PointScale.Twenty, 0, attributes[(int)AttributeNames.PER], attributes[(int)AttributeNames.WILL]);
 
         }
 

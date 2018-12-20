@@ -19,22 +19,15 @@ namespace NPCGEN
 
             
             NPC npc = new NPC("Bob", 43, 100);
-            Skill s = new Skill("Fishing", Difficulty.Easy, npc.GetAttribute(AttributeNames.IQ));
-            npc.AddSkill(s);
-            List<Skill> skills = npc.GetSkills();
-
-            foreach(Skill sk in skills)
-            {
-                Console.WriteLine(sk);
-            }
-
+            Skill Fishing = new Skill("Fishing", Difficulty.Easy, npc.GetAttribute(AttributeNames.IQ));
+            Skill Brawling = new Skill("Brawling", Difficulty.Average, npc.GetAttribute(AttributeNames.DX));
             npc.SetAttribute(AttributeNames.IQ, 20);
-            skills = npc.GetSkills();
 
-            foreach (Skill sk in skills)
-            {
-                Console.WriteLine(sk);
-            }
+            SkillContainer sc = new SkillContainer();
+
+            sc.AddSkill(AttributeNames.IQ, Fishing);
+            sc.AddSkill(AttributeNames.DX, Brawling);
+            Console.WriteLine(sc);
         }
     }
 }
