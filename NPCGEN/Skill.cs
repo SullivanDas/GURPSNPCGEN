@@ -3,38 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static NPCGEN.Enums;
 
 namespace NPCGEN
 {
     class Skill
     {
-        public enum Difficulty { Easy, Average, Hard, VeryHard};
-        private int skillBase;
+        
+        private int _skillLevel;
+        public Attribute SkillType { get; set; }
+
         private Difficulty Diff { get; set; }
         public String Name { get; }
-        public int SkillLevel { get; private set; }
+        public int SkillLevel { get { UpdateSkillLevel(); return _skillLevel; } private set { _skillLevel = value; } }
         public int Points { get; set; }
 
-        public Skill(String name, Enum diff)
+        public Skill(String name, Difficulty diff, Attribute type)
         {
             Name = name;
-            Diff = (Difficulty)diff;
+            Diff = diff;
+            SkillType = type;
             Points = 1;
-            skillBase = 10;
             UpdateSkillLevel();
         }
 
-        public Skill(String name, Enum diff, int points)
+        public Skill(String name, Difficulty diff, Attribute type, int points)
         {
             Name = name;
-            Diff = (Difficulty) diff;
+            Diff = diff;
+            SkillType = type;
             Points = points;
-            skillBase = 10;
+            
             UpdateSkillLevel();
         }
 
         private void UpdateSkillLevel()
         {
+            
             int diffMod = 0;
             switch (Diff)
             {
@@ -59,21 +64,21 @@ namespace NPCGEN
             // maintain the relationship skillLevel = 2^points when points is less than 8 relationship provided by gurps rules
             if(Points == 0)
             {
-                SkillLevel = skillBase - 5;
+                SkillLevel = SkillType.Level - 5;
             }
             else if(Points <= 8)
             {
-                SkillLevel = (int)(Math.Log(Points) / Math.Log(2)) + skillBase + diffMod;
+                SkillLevel = (int)(Math.Log(Points) / Math.Log(2)) + SkillType.Level + diffMod;
             }
             else
             {
-                SkillLevel = (((Points + 8) / 4) - 1) + skillBase + diffMod;
+                SkillLevel = (((Points + 8) / 4) - 1) + SkillType.Level + diffMod;
             }
         }
 
         public override string ToString()
         {
-            return Name + " " + Diff + " " + Points + " " + skillBase + " " + SkillLevel;
+            return Name + " " + Diff + " " + Points + " " + SkillType.Level + " " + SkillLevel + " " + SkillType.Name;
 
         }
 

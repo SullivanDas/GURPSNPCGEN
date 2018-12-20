@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static NPCGEN.Enums;
 
 namespace NPCGEN
 {
     class Attribute
     {
-        public enum PointScale { Two = 2, Three = 3, Five = 5, Ten = 10, Twenty = 20};
+        
         private int _points;
         protected int _level;
         private int _baseStat;
