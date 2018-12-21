@@ -60,6 +60,7 @@
     <Compile Include="NPC.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomNPC.cs" />
     <Compile Include="Skill.cs" />
     <Compile Include="SkillContainer.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">

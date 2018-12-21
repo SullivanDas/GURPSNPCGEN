@@ -17,11 +17,34 @@ namespace NPCGEN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Advantage chronicDepression = new Advantage("chronic depression", "lkasdjfl;kdasjflasdkjfdaslkfjdsal;f ", -15 );
-            AdvantageContainer ac = new AdvantageContainer();
+            RandomNPC randomNPC = new RandomNPC();
+            
+            int capacity = 100;
+            int[] pointDistribution = new int[capacity];
+            for (int j = 0; j < 20; j++)
+            {
 
-            ac.AddAdvantage(AdvantageCategory.Mental ,chronicDepression);
-            Console.WriteLine(ac);
+
+                for (int i = 0; i < capacity; i++)
+                {
+                    int points = randomNPC.GetDisadPoints(100);
+                    pointDistribution[i] = points;
+                }
+
+
+            }
+            
+        }
+
+        public static int Mean(int[] arr)
+        {
+            int sum = 0;
+            foreach(int i in arr)
+            {
+                sum += i;
+            }
+
+            return sum / arr.Length;
         }
     }
 }

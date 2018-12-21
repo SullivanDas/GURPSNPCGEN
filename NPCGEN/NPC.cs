@@ -14,14 +14,13 @@ namespace NPCGEN
         private List<Skill> skills = new List<Skill>();
         private List<Advantage> advantages = new List<Advantage>();
         public String Name { get; }
-        private int Age { get; }
-        private int Points { get; }
+        public int Age { get; }
+        public int Points { get; private set; }
 
-        public NPC(String n, int a, int p)
+        public NPC(String n, int a)
         {
             Name = n;
             Age = a;
-            Points = p;
             InitializeAttributes();
         }
 

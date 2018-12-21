@@ -13,6 +13,6 @@ namespace NPCGEN
         public enum AttributeNames { ST, DX, IQ, HT, HP, WILL, PER, FP };
         public enum AdvantageCategory { Mental, Physical, Social };
         public enum AdvantageType { Exotic, Supernatural, Mundane };
-
+        public enum Gender {  Male, Female };
     }
 }
