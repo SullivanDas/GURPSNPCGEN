@@ -17,17 +17,11 @@ namespace NPCGEN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            
-            NPC npc = new NPC("Bob", 43, 100);
-            Skill Fishing = new Skill("Fishing", Difficulty.Easy, npc.GetAttribute(AttributeNames.IQ));
-            Skill Brawling = new Skill("Brawling", Difficulty.Average, npc.GetAttribute(AttributeNames.DX));
-            npc.SetAttribute(AttributeNames.IQ, 20);
+            Advantage chronicDepression = new Advantage("chronic depression", "lkasdjfl;kdasjflasdkjfdaslkfjdsal;f ", -15 );
+            AdvantageContainer ac = new AdvantageContainer();
 
-            SkillContainer sc = new SkillContainer();
-
-            sc.AddSkill(AttributeNames.IQ, Fishing);
-            sc.AddSkill(AttributeNames.DX, Brawling);
-            Console.WriteLine(sc);
+            ac.AddAdvantage(AdvantageCategory.Mental ,chronicDepression);
+            Console.WriteLine(ac);
         }
     }
 }

@@ -15,23 +15,23 @@ namespace NPCGEN
         private List<Skill> htSkills = new List<Skill>();
         private List<Skill> perSkills = new List<Skill>();
         private List<Skill> willSkills = new List<Skill>();
-        private Dictionary<int, List<Skill>> skills = new Dictionary<int, List<Skill>>();
+        private Dictionary<AttributeNames, List<Skill>> skillsDict = new Dictionary<AttributeNames, List<Skill>>();
 
         public SkillContainer()
         {
-            skills.Add((int)AttributeNames.IQ, iqSkills);
-            skills.Add((int)AttributeNames.DX, dxSkills);
-            skills.Add((int)AttributeNames.ST, stSkills);
-            skills.Add((int)AttributeNames.HT, htSkills);
-            skills.Add((int)AttributeNames.PER, perSkills);
-            skills.Add((int)AttributeNames.WILL, willSkills);
+            skillsDict.Add(AttributeNames.IQ, iqSkills);
+            skillsDict.Add(AttributeNames.DX, dxSkills);
+            skillsDict.Add(AttributeNames.ST, stSkills);
+            skillsDict.Add(AttributeNames.HT, htSkills);
+            skillsDict.Add(AttributeNames.PER, perSkills);
+            skillsDict.Add(AttributeNames.WILL, willSkills);
         }
 
         public void AddSkill(AttributeNames aN, Skill skill)
         {
             try
             {
-                skills[(int)aN].Add(skill);
+                skillsDict[aN].Add(skill);
                 
             }
             catch (KeyNotFoundException)
@@ -41,10 +41,23 @@ namespace NPCGEN
             }
         }
 
+        //if improper key is given null result - check
+        public Skill GetSkill(AttributeNames aN, int listPos)
+        {
+            if(skillsDict.TryGetValue(aN, out List<Skill> skillList )){
+                return skillList[listPos];
+            }
+            else
+            {
+                Console.WriteLine("Key not found");
+            }
+            return null;
+        }
+
         public override string ToString()
         {
             String output = "";
-            foreach(KeyValuePair<int, List<Skill>> k in skills)
+            foreach(KeyValuePair<AttributeNames, List<Skill>> k in skillsDict)
             {
                 foreach(Skill s in k.Value)
                 {
