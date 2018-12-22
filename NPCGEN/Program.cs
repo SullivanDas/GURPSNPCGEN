@@ -19,21 +19,6 @@ namespace NPCGEN
 
             RandomNPC randomNPC = new RandomNPC();
             
-            int capacity = 100;
-            int[] pointDistribution = new int[capacity];
-            for (int j = 0; j < 20; j++)
-            {
-
-
-                for (int i = 0; i < capacity; i++)
-                {
-                    int points = randomNPC.GetDisadPoints(100);
-                    pointDistribution[i] = points;
-                }
-
-
-            }
-            
         }
 
         public static int Mean(int[] arr)
