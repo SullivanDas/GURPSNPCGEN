@@ -49,6 +49,7 @@
     <Compile Include="Advantage.cs" />
     <Compile Include="AdvantageContainer.cs" />
     <Compile Include="Attribute.cs" />
+    <Compile Include="DataWriterReader.cs" />
     <Compile Include="DependentAttribute.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Form1.cs">

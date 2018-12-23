@@ -10,27 +10,24 @@ namespace NPCGEN
     {
 
         public String Name { get; }
-        public String Description { get; }
         public int Points { get; }
 
         public Advantage()
         {
             Name = "";
-            Description = "";
             Points = 0;
         }
 
-        public Advantage(String n, String d, int p)
+        public Advantage(String n, int p)
         {
             Name = n;
-            Description = d;
             Points = p;
 
         }
 
         public override string ToString()
         {
-            String output = Name + " " + Description + " " + Points;
+            String output = Name + " "  + Points;
             return output;
         }
 
@@ -46,7 +43,6 @@ namespace NPCGEN
         {
             var hashCode = -323037219;
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Description);
             hashCode = hashCode * -1521134295 + Points.GetHashCode();
             return hashCode;
         }

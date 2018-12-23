@@ -17,19 +17,10 @@ namespace NPCGEN
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            RandomNPC randomNPC = new RandomNPC();
-            
+            DataWriterReader dwr = new DataWriterReader();
+            AdvantageContainer ac = dwr.GetAdvantageContainer();
+            Console.WriteLine(ac);
         }
 
-        public static int Mean(int[] arr)
-        {
-            int sum = 0;
-            foreach(int i in arr)
-            {
-                sum += i;
-            }
-
-            return sum / arr.Length;
-        }
     }
 }
