@@ -17,21 +17,24 @@ namespace NPCGEN
         public String Name { get; }
         public int SkillLevel { get { UpdateSkillLevel(); return _skillLevel; } private set { _skillLevel = value; } }
         public int Points { get; set; }
+        public int TechLevel { get; set; }
         public NPC Npc { get; set; }
 
-        public Skill(String name, Difficulty diff, AttributeNames type)
+        public Skill(String name, Difficulty diff, AttributeNames type, int tech)
         {
             Name = name;
             Diff = diff;
             SkillType = type;
+            TechLevel = tech;
             Points = 0;
         }
 
-        public Skill(String name, Difficulty diff, AttributeNames type, int points)
+        public Skill(String name, Difficulty diff, AttributeNames type, int tech, int points)
         {
             Name = name;
             Diff = diff;
             SkillType = type;
+            TechLevel = tech;
             Points = points;
             
         }
@@ -77,7 +80,7 @@ namespace NPCGEN
 
         public override string ToString()
         {
-            return Name + " " + Diff + " " + Points + " " + Npc.GetAttribute(SkillType).Level + " " + SkillLevel + " " + Npc.GetAttribute(SkillType).Level;
+            return Name + " " + Diff + " " + Points + " " + SkillLevel;
 
         }
 

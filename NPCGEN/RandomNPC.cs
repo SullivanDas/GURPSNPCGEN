@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static NPCGEN.Enums;
 
 namespace NPCGEN
 {
     class RandomNPC
     {
         Random rand = new Random();
+        DataWriterReader dwr;
+        SkillContainer skills;
+        AdvantageContainer advantages;
+        AdvantageContainer disadvantages;
+        PointDistribution pointDistribution;
+        NPC npc;
 
         private class PointDistribution
         {
@@ -40,16 +47,259 @@ namespace NPCGEN
             }
         }
 
-        public NPC GetRandomNPC(int points)
+        public RandomNPC()
+        {
+            dwr = new DataWriterReader();
+            skills = dwr.GetSkillContainer();
+            advantages = dwr.GetAdvantageContainer();
+            disadvantages = dwr.GetDisadvantageContainer();
+        }
+
+        public NPC GetRandomNPC(int points, int tl)
         {
             
             int disadPoints = GetDisadPoints(points);
             int totalPoints = disadPoints + points;
-            NPC npc = new NPC("bob", 12);
+            int age = rand.Next(14, 81);
+            pointDistribution = DistributePoints(totalPoints);
 
+            npc = new NPC("bob", age, tl);
+            AddSkills();
+            AddAdvantages();
+            AddAttributes();
+            AddDisadvantages(disadPoints);
             return npc;
         }
-        
+
+        private void AddDisadvantages(int disadPoints)
+        {
+            if(npc != null)
+            {
+                int points = disadPoints;
+                List<Advantage> a = new List<Advantage>();
+                while(points > 0)
+                {
+                    try
+                    {
+                        Advantage newAdvantage = GetNewDisadvantage(a);
+                        points += newAdvantage.Points;
+                        
+                        if(points > 0)
+                        {
+                            npc.AddAdvantage(newAdvantage);
+                            a.Add(newAdvantage);
+                        }
+                    }
+                    catch(KeyNotFoundException)
+                    {
+
+                    }
+                }
+            }
+        }
+
+        private Advantage GetNewDisadvantage(List<Advantage> a)
+        {
+            Array enumValues = Enum.GetValues(typeof(AdvantageCategory));
+            AdvantageCategory advantageCategory = (AdvantageCategory)Enum.Parse(typeof(AdvantageCategory), rand.Next(enumValues.Length-1).ToString());
+            try
+            {
+                List<Advantage> advantageList = disadvantages.GetAdvantages(advantageCategory);
+                Advantage newDisadvantage = advantageList[rand.Next(0, advantageList.Count)];
+
+                int count = 0;
+                while (a.Contains(newDisadvantage))
+                {
+                    newDisadvantage = advantageList[rand.Next(0, advantageList.Count)];
+                    count++;
+                    if (count == disadvantages.Size)
+                        break;
+                }
+
+                return newDisadvantage;
+            }
+            catch (KeyNotFoundException)
+            {
+                throw new KeyNotFoundException();
+            }
+        }
+
+        private void AddAttributes()
+        {
+            int points = pointDistribution.AttributePoints;
+            Array enumValues = Enum.GetValues(typeof(AttributeNames));
+            
+            while (points > 0)
+            {
+                AttributeNames attributeName = (AttributeNames)Enum.Parse(typeof(AttributeNames), rand.Next(enumValues.Length).ToString());
+                points -= npc.GetAttribute(attributeName).Scale;
+                if(points > 0)
+                {
+                    npc.SetAttribute(attributeName, IncreaseAttributeLevel(attributeName));
+                }
+            }
+        }
+
+        private int IncreaseAttributeLevel(AttributeNames attributeName)
+        {
+            return npc.GetAttribute(attributeName).Scale + npc.GetAttribute(attributeName).Points;
+        }
+
+        private void AddAdvantages()
+        {
+            if(npc != null)
+            {
+                int points = pointDistribution.AdvantagePoints;
+                List<Advantage> a = new List<Advantage>();
+                while (points > 0)
+                {
+                    try
+                    {
+                        Advantage newAdvantage = GetNewAdvantage(a);
+                        points -= newAdvantage.Points;
+                        if (points > 0)
+                        {
+                            npc.AddAdvantage(newAdvantage);
+                            a.Add(newAdvantage);
+                        }
+                        
+                    }
+                    catch (KeyNotFoundException)
+                    {
+
+                    }
+                }
+            }
+        }
+
+        private Advantage GetNewAdvantage(List<Advantage> a) 
+        {
+            Array enumValues = Enum.GetValues(typeof(AdvantageCategory));
+            AdvantageCategory advantageCategory = (AdvantageCategory)Enum.Parse(typeof(AdvantageCategory), rand.Next(enumValues.Length).ToString());
+            try
+            {
+                List<Advantage> advantageList = advantages.GetAdvantages(advantageCategory);
+
+                Advantage newAdvantage = advantageList[rand.Next(0, advantageList.Count)];
+                
+                int count = 0;
+                while (a.Contains(newAdvantage))
+                {
+                    newAdvantage = advantageList[rand.Next(0, advantageList.Count)];
+                    count++;
+                    if (count == advantages.Size)
+                        break;
+                }
+
+                return newAdvantage;
+            }
+            catch (KeyNotFoundException)
+            {
+                throw new KeyNotFoundException();
+            }
+        }
+
+        private void AddSkills()
+        {
+            if(npc != null)
+            {
+                int points = pointDistribution.SkillPoints;
+                List<Skill> s = new List<Skill>();
+                while (points > 0)
+                {
+
+                    try
+                    {
+                        Skill newSKill = GetNewSkill(s);
+                        int skillPoints = NumberOfSkillPoints();
+                        newSKill.Points = skillPoints;
+                        points -= skillPoints;
+                        if (points > 0)
+                        {
+                            newSKill.Npc = npc;
+                            if (!(newSKill.TechLevel > npc.TechLevel))
+                            {
+                                npc.AddSkill(newSKill);
+                                s.Add(newSKill);
+                            }
+                        }
+                     
+                    }
+                    catch (KeyNotFoundException)
+                    {
+
+                    }
+                    catch (Exception)
+                    {
+                        
+
+                    }
+                    
+                    
+                }
+            }
+        }
+
+        private Skill GetNewSkill(List<Skill> s)
+        {
+            Array enumValues = Enum.GetValues(typeof(AttributeNames));
+            AttributeNames attributeName = (AttributeNames)Enum.Parse(typeof(AttributeNames), rand.Next(enumValues.Length).ToString());
+            try
+            {
+                List<Skill> skillList = skills.GetSkills(attributeName);
+
+                if(skillList.Count == 0)
+                {
+                    throw new Exception("No skills of type");
+                }
+                Skill newSkill = skillList[rand.Next(0, skillList.Count)];
+
+                int count = 0;
+                while (s.Contains(newSkill))
+                {
+                    newSkill = skillList[rand.Next(0, skillList.Count)];
+                    count++;
+                    if (count == skills.Size)
+                        break;
+
+                }
+                    
+
+                return newSkill;
+            }
+            catch (KeyNotFoundException)
+            {
+                throw new KeyNotFoundException();
+            }
+            
+        }
+
+        private int NumberOfSkillPoints()
+        {
+            bool shouldStop = false;
+            int skillPoints = 1;
+            int successPercent = 0;
+            int n = 0;
+
+            while (!shouldStop)
+            {
+                successPercent += (int)(GetGeometricProbabilityOfX(0.35, n) * 100);
+                int randNext = rand.Next(0, 101);
+                if (randNext < successPercent)
+                    shouldStop = true;
+
+                if (n < 4)
+                    skillPoints = (int)Math.Pow(2, n);
+                else
+                    skillPoints = 8 + (4 * n);
+
+                n++;
+            }
+
+            return skillPoints;
+            
+        }
+
         private int GetDisadPoints(int totalPoints)
         {
             const int distributionSize = 50;

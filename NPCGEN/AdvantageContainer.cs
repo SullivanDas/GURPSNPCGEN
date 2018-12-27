@@ -15,6 +15,13 @@ namespace NPCGEN
 
         private Dictionary<AdvantageCategory, List<Advantage>> advantageDict = new Dictionary<AdvantageCategory, List<Advantage>>();
 
+        public int Size {
+            get
+            {
+                return physicalAdvantages.Count + mentalAdvantages.Count + socialAdvantages.Count;
+            }
+        }
+
         public AdvantageContainer()
         {
             advantageDict.Add(AdvantageCategory.Mental, mentalAdvantages);
@@ -47,6 +54,16 @@ namespace NPCGEN
                 Console.WriteLine("Key not found");
             }
             return null;
+        }
+
+        public List<Advantage>GetAdvantages(AdvantageCategory aC)
+        {
+            if (advantageDict.TryGetValue(aC, out List<Advantage> advantageList))
+            {
+                return advantageList;
+            }
+            else
+                throw new KeyNotFoundException();
         }
 
         public override string ToString()

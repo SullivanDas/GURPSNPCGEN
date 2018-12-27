@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static NPCGEN.Enums;
 
 namespace NPCGEN
 {
@@ -11,6 +12,7 @@ namespace NPCGEN
 
         public String Name { get; }
         public int Points { get; }
+        public AdvantageType Type { get; }
 
         public Advantage()
         {
@@ -18,11 +20,11 @@ namespace NPCGEN
             Points = 0;
         }
 
-        public Advantage(String n, int p)
+        public Advantage(String n, int p, AdvantageType t)
         {
             Name = n;
             Points = p;
-
+            Type = t;
         }
 
         public override string ToString()

@@ -16,6 +16,15 @@ namespace NPCGEN
         private List<Skill> perSkills = new List<Skill>();
         private List<Skill> willSkills = new List<Skill>();
         private Dictionary<AttributeNames, List<Skill>> skillsDict = new Dictionary<AttributeNames, List<Skill>>();
+        private int _size;
+        public int Size
+        {
+            get
+            {
+                _size = iqSkills.Count + dxSkills.Count + stSkills.Count + htSkills.Count + perSkills.Count + willSkills.Count;
+                return _size;
+            }
+        }
 
         public SkillContainer()
         {
@@ -49,9 +58,22 @@ namespace NPCGEN
             }
             else
             {
-                Console.WriteLine("Key not found");
+
             }
             return null;
+        }
+
+        public List<Skill> GetSkills(AttributeNames aN)
+        {
+            if(skillsDict.TryGetValue(aN, out List<Skill> skillList))
+            {
+                return skillList;
+            }
+            else
+            {
+                Console.WriteLine("Key Not Found");
+                throw new KeyNotFoundException();
+            }
         }
 
         public override string ToString()

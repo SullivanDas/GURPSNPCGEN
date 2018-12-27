@@ -16,12 +16,14 @@ namespace NPCGEN
         public String Name { get; }
         public int Age { get; }
         public int Points { get; private set; }
+        public int TechLevel { get; private set; }
 
-        public NPC(String n, int a)
+        public NPC(String n, int a, int t)
         {
             Name = n;
             Age = a;
             InitializeAttributes();
+            TechLevel = t;
         }
 
         private void InitializeAttributes()
@@ -40,11 +42,17 @@ namespace NPCGEN
 
         public void AddSkill(Skill s)
         {
+            Points += s.Points;
             skills.Add(s);
         }
-
+        public void AddAdvantage(Advantage a)
+        {
+            Points += a.Points;
+            advantages.Add(a);
+        }
         public void SetAttribute(AttributeNames aN, int points)
         {
+            Points += points;
             attributes[(int)aN].Points = points;
         }
         public Attribute[] GetAttributes()
@@ -83,7 +91,7 @@ namespace NPCGEN
                 output += " ";
             }
 
-            return output + " " + Name + " " + Age + " " + Points;
+            return output + " " + Name + " " + Age + " " + TechLevel + " " + Points;
         }
     }
 }
