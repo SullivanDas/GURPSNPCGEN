@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RandomNameGeneratorLibrary;
 using static NPCGEN.Enums;
 
 namespace NPCGEN
@@ -55,39 +56,56 @@ namespace NPCGEN
             disadvantages = dwr.GetDisadvantageContainer();
         }
 
-        public NPC GetRandomNPC(int points, int tl)
+        public NPC GetRandomNPC(int points, int tl, bool exotic, bool supernatural)
         {
             
+            PersonNameGenerator generator = new PersonNameGenerator();
             int disadPoints = GetDisadPoints(points);
             int totalPoints = disadPoints + points;
             int age = rand.Next(14, 81);
             pointDistribution = DistributePoints(totalPoints);
+            string name = generator.GenerateRandomFirstName();
 
-            npc = new NPC("bob", age, tl);
+            npc = new NPC(name, age, tl);
             AddSkills();
-            AddAdvantages();
+            AddAdvantages(exotic, supernatural);
             AddAttributes();
-            AddDisadvantages(disadPoints);
+            AddDisadvantages(disadPoints, exotic, supernatural);
             return npc;
         }
 
-        private void AddDisadvantages(int disadPoints)
+        private void AddDisadvantages(int disadPoints, bool exotic, bool supernatural)
         {
             if(npc != null)
             {
                 int points = disadPoints;
+                int failCount = 0;
                 List<Advantage> a = new List<Advantage>();
                 while(points > 0)
                 {
                     try
                     {
                         Advantage newAdvantage = GetNewDisadvantage(a);
-                        points += newAdvantage.Points;
-                        
-                        if(points > 0)
+
+                        if ((newAdvantage.Type.Equals(AdvantageType.Exotic) && !exotic) || (newAdvantage.Type.Equals(AdvantageType.Supernatural) && !supernatural))
                         {
+                            continue;
+                        }
+
+                        
+                        
+                        if((points + newAdvantage.Points) > 0)
+                        {
+                            failCount = 0;
+                            points += newAdvantage.Points;
                             npc.AddAdvantage(newAdvantage);
                             a.Add(newAdvantage);
+                        }
+                        else
+                        {
+                            failCount++;
+                            if (failCount == 3)
+                                break;
                         }
                     }
                     catch(KeyNotFoundException)
@@ -105,6 +123,7 @@ namespace NPCGEN
             try
             {
                 List<Advantage> advantageList = disadvantages.GetAdvantages(advantageCategory);
+                
                 Advantage newDisadvantage = advantageList[rand.Next(0, advantageList.Count)];
 
                 int count = 0;
@@ -145,29 +164,52 @@ namespace NPCGEN
             return npc.GetAttribute(attributeName).Scale + npc.GetAttribute(attributeName).Points;
         }
 
-        private void AddAdvantages()
+        private void AddAdvantages(bool exotic, bool supernatural)
         {
             if(npc != null)
             {
                 int points = pointDistribution.AdvantagePoints;
+                int failCount = 0;
                 List<Advantage> a = new List<Advantage>();
                 while (points > 0)
                 {
                     try
                     {
+                        
                         Advantage newAdvantage = GetNewAdvantage(a);
-                        points -= newAdvantage.Points;
-                        if (points > 0)
+                        
+                        if((newAdvantage.Type.Equals(AdvantageType.Exotic) && !exotic) || (newAdvantage.Type.Equals(AdvantageType.Supernatural) && !supernatural))
                         {
+                            continue;
+                        }
+
+                        
+                        if ((points - newAdvantage.Points) > 0)
+                        {
+                            failCount = 0;
+                            points -= newAdvantage.Points;
                             npc.AddAdvantage(newAdvantage);
                             a.Add(newAdvantage);
                         }
-                        
+                        else
+                        {
+                            failCount++;
+                            if (failCount == 3)
+                            {
+                                break;
+                            }
+                        }
+
                     }
                     catch (KeyNotFoundException)
                     {
 
                     }
+                    catch (NullReferenceException)
+                    {
+                        break;
+                    }
+
                 }
             }
         }
@@ -181,14 +223,18 @@ namespace NPCGEN
                 List<Advantage> advantageList = advantages.GetAdvantages(advantageCategory);
 
                 Advantage newAdvantage = advantageList[rand.Next(0, advantageList.Count)];
-                
+
                 int count = 0;
                 while (a.Contains(newAdvantage))
                 {
                     newAdvantage = advantageList[rand.Next(0, advantageList.Count)];
                     count++;
-                    if (count == advantages.Size)
-                        break;
+
+                    if (count == (advantages.Size * 10))
+                    {
+                        throw new NullReferenceException();
+                    }
+
                 }
 
                 return newAdvantage;

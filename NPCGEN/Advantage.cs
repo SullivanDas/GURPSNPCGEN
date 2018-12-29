@@ -14,6 +14,7 @@ namespace NPCGEN
         public int Points { get; }
         public AdvantageType Type { get; }
 
+
         public Advantage()
         {
             Name = "";

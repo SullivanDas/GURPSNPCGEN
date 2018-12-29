@@ -26,14 +26,13 @@ namespace NPCGEN
 
         private void Initialize()
         {
-            Console.WriteLine("initialize");
+
             LoadSkills("../../skills.xml");
             LoadAdvantages("../../advantages.xml");
             LoadDisads("../../disads.xml");
             FillSkills();
             FillAdvantages();
             FillDisads();
-            Console.WriteLine(disadvantageContainer);
             
         }
 
@@ -158,10 +157,10 @@ namespace NPCGEN
                     writer.WriteStartElement("disadvantage");
                     writer.WriteStartElement("name");
                     writer.WriteAttributeString("type", "Physical");
-                    writer.WriteElementString("category", "Mundane");
                     writer.WriteString("bad back");
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -916,6 +915,1006 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "10");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Gullibility");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Ham-fisted");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Severe Ham-Fisted");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hard of Hearing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hemophilia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Hidebound");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Horizontal");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hunchback");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Impulsiveness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Increased consumption");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Incurious");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("indecisive");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Infectious Attack");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Innumerate");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Insomniac");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Severe Insomniac");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Intolerance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Invertebrate");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Jealousy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Killjoy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Kleptomania");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Klutz");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Total Klutz");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Crippled Legs");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Missing Legs");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Laziness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Lecherousness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Lifebane");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Light Sleeper");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Loner");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Low Empathy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Low Pain Threshold");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Low Self Image");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Lunacy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Magic Susceptibility");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "3");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Manic-Depressive");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Megalomania");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Miserliness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Missing Finger");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Missing Thumb");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Motion Sickness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mundane Background");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Mild Neurological Disorder");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Severe Neurological Disorder");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "35");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Crippling Neurological Disorder");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "55");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Night Blindness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Nightmares");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No Depth Perception");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No Fine Manipulators");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No Manipulators");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No Legs (Tracked)");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No Legs (Sessile)");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("No Sense of Humor");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("No sense of Smell/Taste");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Nocturnal");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Noisy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Non-Iconographic");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Numb");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Oblivious");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Obsession");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("On the Edge");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("One Arm");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("One Eye");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("One Hand");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Overconfidence");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Relectant Killer");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Cannot Harm Innocents");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Cannot Kill");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Self Defense Pacifism");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Total Pacifism");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Phantom Voices Annoying");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Disturbing Phantom Voices");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Diabolical Phantom voices");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Autophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Hemophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Ailurophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Demophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Scotophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Necrophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mysophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Cynophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Claustrophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Pyrophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Acrophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Entomophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Brontophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Technophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Teratophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Thalassophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Agoraphobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Herpetophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Coitophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Aichmophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Arachnaphobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Xenophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Heliophobia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Post-Combat Shakes");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Pyromania");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Quadriplegic");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "80");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("disadvantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Reprogrammable");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
                     writer.WriteEndElement();
                     writer.Flush();
                 }
@@ -3620,6 +4619,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "25");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3630,6 +4630,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "5");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3640,6 +4641,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "10");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3650,6 +4652,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "2");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3660,6 +4663,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "5");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "12");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3670,6 +4674,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "2");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3680,6 +4685,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "100");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "12");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3690,17 +4696,10 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "5");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
-                    writer.WriteStartElement("advantage");
-                    writer.WriteStartElement("name");
-                    writer.WriteAttributeString("type", "Social");
-                    writer.WriteString("Illegal Alternate Identity");
-                    writer.WriteEndElement();
-                    writer.WriteElementString("points", "15");
-                    writer.WriteEndElement();
-                    writer.Flush();
 
                     writer.WriteStartElement("advantage");
                     writer.WriteStartElement("name");
@@ -3709,6 +4708,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "5");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3719,6 +4719,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "10");
                     writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3729,6 +4730,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "5");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3739,6 +4741,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "4");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3749,6 +4752,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "12");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3759,6 +4763,7 @@ namespace NPCGEN
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "16");
                     writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
                     writer.WriteEndElement();
                     writer.Flush();
 
@@ -3768,6 +4773,2212 @@ namespace NPCGEN
                     writer.WriteString("Transcendent Appearance");
                     writer.WriteEndElement();
                     writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Transcendent Appearance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Transcendent Appearance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteElementString("TL", "0");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Arm DX");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "12");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Arm ST");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "3");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteElementString("TL", "0");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Binding");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Blessed");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Brachiator");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Breath-Holding");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Catfall");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Chameleon");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Channeling");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Charisma");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Claim to Hospitality");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Clairsentinence");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Claws");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Clerical Investment");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Clinging");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Combat Reflexes");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Common Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Compartmentalized Mind");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Constriction Attack");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Cultural Adaptability");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Xeno Adaptability");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Damage Resistance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Danger Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Daredevil");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Darkvision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Great Destiny");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Major Destiny");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Minor Destiny");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Rare Detect");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Occasional Detect");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Common Detect");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Digital Mind");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Discriminatory Hearing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Discriminatory Smell");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Discriminatory Taste");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Doesnt Breathe");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Doesnt Eat or Drink");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Doesnt Sleep");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Dominance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Duplication");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "35");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Eidetic Memory");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Elastic Skin");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Empath");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Enhanced block");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Enhanced Dodge");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Enhanced Parry");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Enhanced Move");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Enhanced Time Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "45");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Enhanced Tracking");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extended Lifespan");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extra Arms");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extra Attack");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extra Head");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extra Legs");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Extra Life");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extra Mouth");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Favor");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Fearlessness");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Filter Lungs");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Fit");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Very Fit");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Flexibility");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Double Jointed");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Flight");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Gadgeteer");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Quick Gadgeteer");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Gizmos");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("G-Experience");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Gunslinger");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Growth");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hard to Kill");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hard to Subdue");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Healing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hermaphromorph");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("High Manual Dexterity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("High Pain THreshold");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Higher Purpose");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Hyperspecrtral Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Illuminated");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Improbed G-Tolerance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Indomitable");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Infravision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Intuition");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Invisibility");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Jumper");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "100");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Language Talent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Local Legal Enforcement");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("National Legal Enforcmeent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Global Legal Enforcment");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Limited Legal Immunity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Legal Immunity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Total Legal Immunity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Less Sleep");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Lifting ST");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "3");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Lightning Calculator");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Longevity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Luck");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Extraordinary Luck");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Ridiculous Luck");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Magery");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Magic Resistance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mana Damper");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mana Enhancer");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Medium");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Metabolism Control");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Microscopic Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mimicry");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mind Control");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mind Probe");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mind Reading");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Mind Shield");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "4");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("SIngle Mindlink");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Group Mindlink");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Neutralize");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Night Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "1");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Nictitating Membrane");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "1");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Obscure");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Oracle");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Parabolic Hearing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Perfect Balance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Penetrating Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Peripheral Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Very Common Permeation");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Common Permeation");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Occasional Permeation");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Rare Permeation");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Plant Empathy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Possession");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "100");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Digital");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Power Investiture");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Precognition");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Pressure Support");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Protected Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Psi Static");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Psychometry");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Passive Racial Memory");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Active Racial Memory");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Rapid Healing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Very Rapid Healing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Rapier Wit");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Reawakened");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Recovery");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Reduced Consumption");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Slow Regeneration");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Regeneration");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Fast Regeneration");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Very Fast Regeneration");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "100");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Extreme Regeneration");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "150");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Regrowth");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Common Resistance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Occasional Resistance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Rare Resistance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Scanning Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Sealed");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Security Clearance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Medium Security Clearance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("High Security Clearance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("See Invisible");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Sensitive Touch");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Serendipity");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Shadow Form");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Shrinking");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Signature Gear");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "1");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Silence");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("SingleMinded");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Slippery");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Snatcher");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "80");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Social Chameleon");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Social Regard");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Speak Underwater");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Speak With Animals");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "25");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Speak With Plants");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Speacial Rapport");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Spines");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "3");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Spirit Empathy");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Stretching");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "6");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Striker");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Striking ST");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Subsonic Hearing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Subsonic Speech");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Super CLimbing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Super Luck");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "100");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Supernatural Durability");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "150");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Small Talent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Medium Talent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Large Talent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Sharp Teeth");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "1");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Fangs");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "2");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Telecommunication");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Telekinesis");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Telescopic Vision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Temperature Control");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Temperature Tolerance");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "1");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Temporal Inertia");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Terrain Adaptation");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Terror");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Trained By a Master");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("True Faith");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Tunneling");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Ultrahearing");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Ultrasonic Speech");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Ultravision");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Unaging");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Unfazeable");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Universal Digestion");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Unkillable");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "50");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Vacuum Support");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Vampiric Bite");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "30");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Versatile");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "5");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Vibration Sense");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Visualization");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Voice");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Walk on Air");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Walk on Liquid");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "15");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Warp");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
+                    writer.WriteElementString("category", "Exotic");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Physical");
+                    writer.WriteString("Weapon Master");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "40");
+                    writer.WriteElementString("category", "Mundane");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Mental");
+                    writer.WriteString("Wild Talent");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "20");
+                    writer.WriteElementString("category", "Supernatural");
+                    writer.WriteEndElement();
+                    writer.Flush();
+
+                    writer.WriteStartElement("advantage");
+                    writer.WriteStartElement("name");
+                    writer.WriteAttributeString("type", "Social");
+                    writer.WriteString("Zeroed");
+                    writer.WriteEndElement();
+                    writer.WriteElementString("points", "10");
                     writer.WriteElementString("category", "Mundane");
                     writer.WriteEndElement();
                     writer.Flush();
@@ -3788,7 +6999,7 @@ namespace NPCGEN
             {
                 foreach (XElement element in disads.Descendants("disadvantage"))
                 {
-
+                    
                     if (element.Element("name").HasAttributes)
                     {
                         AdvantageCategory type = (AdvantageCategory)Enum.Parse(typeof(AdvantageCategory), element.Element("name").Attribute("type").Value);
@@ -3844,7 +7055,7 @@ namespace NPCGEN
             {
                 foreach (XElement element in advantages.Descendants("advantage"))
                 {
-                    
+
                     if (element.Element("name").HasAttributes)
                     {
                         AdvantageCategory type = (AdvantageCategory)Enum.Parse(typeof(AdvantageCategory), element.Element("name").Attribute("type").Value);

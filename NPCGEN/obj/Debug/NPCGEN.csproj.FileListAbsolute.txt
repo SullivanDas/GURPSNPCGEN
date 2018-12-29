@@ -7,3 +7,7 @@ D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.csproj.GenerateResource.cache
 D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.csproj.CoreCompileInputs.cache
 D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.exe
 D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.pdb
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.Main.resources
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.NPCSheet.resources
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Debug\RandomNameGeneratorLibrary.dll
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.csproj.CopyComplete
