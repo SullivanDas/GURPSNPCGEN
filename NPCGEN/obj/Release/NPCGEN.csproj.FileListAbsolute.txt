@@ -1,0 +1,17 @@
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\NPCGEN.exe.config
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\NPCGEN.exe.manifest
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\NPCGEN.application
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\NPCGEN.exe
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\NPCGEN.pdb
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Release\RandomNameGeneratorLibrary.dll
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.csprojAssemblyReference.cache
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.Main.resources
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.NPCSheet.resources
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.Properties.Resources.resources
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.csproj.GenerateResource.cache
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.csproj.CoreCompileInputs.cache
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.exe.manifest
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.application
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.csproj.CopyComplete
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.exe
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Release\NPCGEN.pdb

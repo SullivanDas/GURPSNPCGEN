@@ -157,7 +157,8 @@
             this.Controls.Add(this.Title);
             this.Controls.Add(this.PointsTextBox);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

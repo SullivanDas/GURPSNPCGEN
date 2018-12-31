@@ -15,6 +15,7 @@ namespace NPCGEN
         public Main()
         {
             InitializeComponent();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -94,6 +95,11 @@ namespace NPCGEN
                 
             }
             
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
