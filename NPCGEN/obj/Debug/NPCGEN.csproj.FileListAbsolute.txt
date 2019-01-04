@@ -11,3 +11,7 @@ D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.Main.resources
 D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.NPCSheet.resources
 D:\Code\Projects\NPCGEN\NPCGEN\bin\Debug\RandomNameGeneratorLibrary.dll
 D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.csproj.CopyComplete
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Debug\NPCGEN.exe.manifest
+D:\Code\Projects\NPCGEN\NPCGEN\bin\Debug\NPCGEN.application
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.exe.manifest
+D:\Code\Projects\NPCGEN\NPCGEN\obj\Debug\NPCGEN.application

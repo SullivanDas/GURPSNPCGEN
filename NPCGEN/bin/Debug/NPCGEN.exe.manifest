@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NPCGEN.exe" size="114656">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NPCGEN.exe" size="122848">
       <assemblyIdentity name="NPCGEN" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UcFYLs3vN9HWu2UVK7biHvYRiaYfE0+jbp+jQnhanoc=</dsig:DigestValue>
+        <dsig:DigestValue>2ynXXUV9mkR9UonTUqQZ0pkrmqPqVK5qAJFVuyzJIys=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

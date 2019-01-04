@@ -27,9 +27,9 @@ namespace NPCGEN
         private void Initialize()
         {
 
-            LoadSkills("../../skills.xml");
-            LoadAdvantages("../../advantages.xml");
-            LoadDisads("../../disads.xml");
+            LoadSkills("skills.xml");
+            LoadAdvantages("advantages.xml");
+            LoadDisads("disads.xml");
             FillSkills();
             FillAdvantages();
             FillDisads();
